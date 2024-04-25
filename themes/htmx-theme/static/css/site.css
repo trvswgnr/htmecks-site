@@ -259,6 +259,10 @@ pre {
   overflow-x: auto;
 }
 
+code {
+  padding: 0 0.2em;
+}
+
 pre > code {
   padding: 10px;
   border: 0;
@@ -832,7 +836,20 @@ footer {
   }
 }
 
-a:has(code),
+a:has(code) {
+  text-decoration-line: underline;
+}
+
 a:has(code):hover {
   text-decoration: none !important;
+}
+
+a code {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 1px;
+}
+
+a:hover code {
+  text-decoration-color: var(--color-highlight);
 }

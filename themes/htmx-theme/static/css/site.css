@@ -18,7 +18,7 @@
   --highlight-border-radius: 0px;
   --border-radius: 0px;
   --color-primary: #3d72d7;
-  --color-links: #3d72d7;
+  --color-links: var(--color-primary);
   --color-highlight: #fffab7;
   --background-body: #fff;
   --background-main: #f1f1f1;
@@ -33,8 +33,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #5c9dff;
-    --color-links: #5c9dff;
+    --color-primary: #70a9ff;
+    --color-links: var(--color-primary);
     --background-body: #0f0f0f;
     --background-main: #222;
     --background-inputs: #222;

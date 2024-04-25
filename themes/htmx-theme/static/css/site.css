@@ -219,10 +219,6 @@ a:focus {
   text-decoration-color: var(--color-highlight);
 }
 
-a:has(code) {
-  text-decoration: none;
-}
-
 mark,
 samp,
 kbd,
@@ -829,4 +825,12 @@ footer {
     align-items: center;
     gap: 24px;
   }
+}
+
+a:has(code) {
+  text-decoration: none;
+}
+
+a:has(code):hover {
+  text-decoration: none;
 }

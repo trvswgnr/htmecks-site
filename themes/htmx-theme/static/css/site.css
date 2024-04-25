@@ -212,10 +212,14 @@ a {
 a:active,
 a:hover,
 a:focus {
-  text-decoration-line: none;
+  text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
   text-decoration-color: var(--color-highlight);
+}
+
+a:has(code) {
+  text-decoration: none;
 }
 
 mark,

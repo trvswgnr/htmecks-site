@@ -204,12 +204,18 @@ p {
 /* Inline text elements */
 a {
   color: var(--color-links);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 a:active,
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-highlight);
 }
 
 mark,
@@ -244,7 +250,7 @@ time {
 
 code,
 pre {
-  font-size: 1em;
+  font-size: 0.8em;
   padding: 2px 4px;
   background: var(--background-main);
   border: 1px solid darkgray;
@@ -282,7 +288,6 @@ img {
 }
 
 /* Tables */
-
 
 table {
   /* width: fit-content; */
@@ -331,7 +336,8 @@ tfoot {
 
 table tr:hover td,
 tbody tr:nth-child(even):hover td {
-  background-color: var(--table-highlight);
+  opacity: 0.9;
+  /* background-color: var(--table-highlight); */
 }
 
 /* Form elements */
@@ -604,6 +610,7 @@ details[open] summary {
 
 .navigation-items {
   display: flex;
+  align-items: center;
   gap: 24px;
 }
 
@@ -671,9 +678,17 @@ table code {
   color: var(--color-highlight);
 }
 
+.info-table a {
+  text-decoration: none;
+}
+
+.info-table a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 760px) {
   table code {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -687,22 +702,22 @@ table {
 
 table caption {
   font-size: 1.5em;
-  margin: .5em 0 .75em;
+  margin: 0.5em 0 0.75em;
 }
 
 table tr {
-  padding: .35em;
+  padding: 0.35em;
 }
 
 table th,
 table td {
-  padding: .625em;
+  padding: 0.625em;
   text-align: center;
 }
 
 table th {
-  font-size: .85em;
-  letter-spacing: .1em;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -714,7 +729,7 @@ table th {
   table caption {
     font-size: 1.3em;
   }
-  
+
   table thead {
     border: none;
     clip: rect(0 0 0 0);
@@ -725,30 +740,73 @@ table th {
     position: absolute;
     width: 1px;
   }
-  
+
   table tr {
     display: block;
-    margin-bottom: .625em;
+    margin-bottom: 0.625em;
   }
-  
+
   table td {
     display: block;
-    font-size: .8em;
-    text-align: right;
+    font-size: 1em;
+    text-align: left;
   }
-  
+
   table td::before {
     /*
     * aria-label has no advantage, it won't be read inside a table
     content: attr(aria-label);
     */
+    font-size: 0.8em;
     content: attr(data-label);
-    float: left;
     font-weight: bold;
-    text-transform: uppercase;
+    font-style: italic;
+    display: block;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 0.5em;
   }
-  
+
   table td:last-child {
     border-bottom: 0;
+  }
+
+  .info-table table td div {
+    opacity: 0.8;
+  }
+}
+
+main h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+main h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+a.zola-anchor {
+  margin-right: 0.5rem;
+  text-decoration-line: none;
+}
+
+a.zola-anchor:hover {
+  text-decoration-line: underline;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+@media (min-width: 760px) {
+  .d-md-block {
+    display: block;
+  }
+  .d-md-none {
+    display: none;
   }
 }

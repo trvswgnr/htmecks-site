@@ -871,6 +871,7 @@ a:hover code {
   border: 1px solid var(--color-fg);
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 .btn-download:hover {

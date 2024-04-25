@@ -251,7 +251,7 @@ time {
 code,
 pre {
   font-size: 0.8em;
-  padding: 2px 4px;
+  padding: 0;
   background: var(--background-main);
   border: 1px solid darkgray;
   max-width: fit-content;
@@ -675,8 +675,8 @@ details[open] summary {
 
 table code {
   border: 0;
-  background-color: rgba(0, 0, 0, 0.15);
-  color: var(--color-highlight);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--color-primary);
 }
 
 .info-table a {
@@ -687,18 +687,19 @@ table code {
   text-decoration: underline;
 }
 
-@media (max-width: 760px) {
+@media (prefers-color-scheme: dark) {
   table code {
     background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-highlight);
   }
 }
 
 table {
-  border-collapse: collapse;
+  border-collapse: initial;
   margin: 0;
   padding: 0;
   width: 100%;
-  table-layout: fixed;
+  /* table-layout: fixed; */
 }
 
 table caption {
@@ -713,7 +714,7 @@ table tr {
 table th,
 table td {
   padding: 0.625em;
-  text-align: center;
+  text-align: left;
 }
 
 table th {
@@ -809,5 +810,18 @@ a.zola-anchor:hover {
   }
   .d-md-none {
     display: none;
+  }
+}
+
+footer {
+  padding: 24px 0;
+}
+
+@media (min-width: 760px) {
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
   }
 }

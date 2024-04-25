@@ -76,6 +76,7 @@ Thank you to all our generous <a href="https://github.com/sponsors/bigskysoftwar
   padding: 16px;
   min-height: 100px;
   border-bottom: none;
+  vertical-align: middle;
 }
 
 @media only screen and (max-width: 760px)  {

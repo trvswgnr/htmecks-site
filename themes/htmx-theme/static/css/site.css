@@ -568,12 +568,12 @@ details[open] summary {
 .container {
   max-width: 800px;
   margin: auto;
+  padding: 0 16px;
 }
 
 @media (max-width: 760px) {
   .container {
     max-width: 100%;
-    padding: 0 16px;
   }
 }
 
@@ -618,6 +618,8 @@ details[open] summary {
   display: flex;
   align-items: center;
   gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav-actions {

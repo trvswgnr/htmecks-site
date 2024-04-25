@@ -813,19 +813,19 @@ a.zola-anchor:hover {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .d-block {
-  display: block;
+  display: block !important;
 }
 
 @media (min-width: 760px) {
   .d-md-block {
-    display: block;
+    display: block !important;
   }
   .d-md-none {
-    display: none;
+    display: none !important;
   }
 }
 

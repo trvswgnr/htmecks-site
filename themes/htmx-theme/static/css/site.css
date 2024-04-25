@@ -33,6 +33,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --color-highlight: #fffab7;
     --color-primary: #70a9ff;
     --color-links: var(--color-primary);
     --background-body: #0f0f0f;

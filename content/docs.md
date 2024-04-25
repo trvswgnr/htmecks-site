@@ -4,10 +4,8 @@ title = "Documentation"
 custom_classes = "wide-content"
 +++
 <div class="row">
-<div class="2 col nav">
-
-**Contents**
-
+<details class="2 col nav">
+<summary><strong>Contents</strong></summary>
 <div id="contents">
 
 * [introduction](#introduction)
@@ -1630,5 +1628,5 @@ And that's it!
 
 Have fun with htmx! You can accomplish [quite a bit](@/examples/_index.md) without writing a lot of code!
 
-</div>
+</details>
 </div>

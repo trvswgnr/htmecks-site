@@ -264,7 +264,8 @@ pre {
 }
 
 code {
-  padding: 0 0.2em;
+  padding: 0.2em;
+  border: 0;
 }
 
 pre > code {
@@ -901,9 +902,10 @@ a:hover code {
   fill: #db61a2;
 }
 
-.row {
+.l-row {
   display: flex;
   flex-direction: row;
+  gap: 24px;
 }
 
 .justify-between {

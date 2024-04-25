@@ -3,9 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="htmx gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext
-
-    htmx is small (~14k min.gz’d), dependency-free, extendable, IE11 compatible & has reduced code base sizes by 67% when compared with react">
+    <meta name="description" content="htmecks gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext. htmx is small (~14k min.gz’d), dependency-free, extendable, IE11 compatible & has reduced code base sizes by 67% when compared with react.">
+    <!-- social things -->
+    <meta property="og:title" content="htmecks">
+    <meta property="og:description" content="htmecks gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext. htmx is small (~14k min.gz’d), dependency-free, extendable, IE11 compatible & has reduced code base sizes by 67% when compared with react.">
+    <meta property="og:image" content="https://htmecks.org/img/og-image.png">
+    <meta property="og:url" content="https://htmecks.org">
+    <meta property="og:type" content="website">
+    <!-- end social things -->
     {# This block should set html_title appropriately -#}
     {% block title %} {% endblock title -%}
     <title>{{ html_title | default(value=config.title) | safe }}</title>
@@ -26,7 +31,7 @@
     <div class="c container">
         <div class="menu">
             <div class="logo-wrapper">
-                <a href="/" class="logo">&lt;<b class="color-primary">/</b>&gt; htm<b class="color-primary">x</b><sub class="no-mobile"><i>high power tools for HTML</i></sub></a>
+                <a href="/" class="logo">&lt;<b class="color-primary">/</b>&gt; htm<b class="color-primary">ecks</b><sub class="no-mobile"><i>high power tools for HTML</i></sub></a>
             </div>
             {% if page and page.path is starting_with("/examples") %}
             <div id="nav" class="navigation"> <!-- don't boost on demo pages, sinon hijacks everything :/ -->

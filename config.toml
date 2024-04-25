@@ -1,5 +1,5 @@
 base_url = "https://htmecks.org"
-title = "</> htmx - high power tools for html"
+title = "</> htmecks - high power tools for html"
 theme = "htmx-theme"
 
 compile_sass = false

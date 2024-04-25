@@ -8,7 +8,7 @@ insert_anchor_links = "left"
 </div> -->
 
 <div class="news-box">
-<b>NEWS:</b> htmx finished 2nd in the <a href="https://risingstars.js.org/2023/en#section-framework">2023 
+<strong>NEWS:</strong> htmx finished 2nd in the <a href="https://risingstars.js.org/2023/en#section-framework">2023 
 JavaScript Rising Stars</a> "Front-end Frameworks" category, just behind React (htmx is a library, btw) and <a href="https://risingstars.js.org/2023/en#section-all">#10 overall</a>!
 Thank you to everyone who <a href="https://github.com/bigskysoftware/htmx">starred</a> us!
 </div>

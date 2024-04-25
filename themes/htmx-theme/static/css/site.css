@@ -827,10 +827,7 @@ footer {
   }
 }
 
-a:has(code) {
-  text-decoration: none;
-}
-
+a:has(code),
 a:has(code):hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
